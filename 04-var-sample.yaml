@@ -16,4 +16,7 @@
         msg: "{{ URL }}"
       vars:    
          URL: task.google.com
-        
+
+    - name: printing url 
+      ansible.builtin.debug:
+        msg: "{{ CLI_URL }}"        
