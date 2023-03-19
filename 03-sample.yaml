@@ -1,5 +1,5 @@
 - name: play1
-  hosts: all
+  hosts: dev
   tasks:
     - name: print msg from task1 and play1
       ansible.builtin.debug:
