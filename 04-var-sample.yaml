@@ -13,4 +13,4 @@
 
     - name: printing url 
       ansible.builtin.debug:
-        msg: {{ URL }}
+        msg: "{{ URL }}"
