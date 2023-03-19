@@ -13,5 +13,5 @@
   hosts: dev
   tasks:
     - name: print msg from task play2
-       ansible.builtin.debug:
+      ansible.builtin.debug:
            msg:  hai from task play2   
