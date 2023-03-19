@@ -1,0 +1,12 @@
+- name: play1
+  host: all
+  tasks:
+  - name: print hello from task1 and play1
+    ansible.builtin.debug:
+    msg: hai task from play1
+
+  - name: print hello from task1 and play1
+    ansible.builtin.debug:
+    msg: hai task from play1
+
+
