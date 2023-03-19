@@ -20,3 +20,5 @@
     - name: printing url 
       ansible.builtin.debug:
         msg: "{{ CLI_URL }}"        
+      vars:    
+         CLI_URL: cli.flipkart.com        
