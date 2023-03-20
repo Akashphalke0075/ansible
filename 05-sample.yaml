@@ -2,6 +2,8 @@
   hosts: dev
   vars: 
     URL: cerulean.com
+  vars_files:
+    - demo-url.yaml
   tasks:
    - name: printing value of play 1
      ansible.builtin.debug:
