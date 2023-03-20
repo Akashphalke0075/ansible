@@ -7,11 +7,10 @@
      ansible.builtin.debug:
        msg: website url is {{URL}}
 
-
    - name: printing value of play 2
      ansible.builtin.debug:
         msg: value of url is {{URL}}
-      vars:
+     vars:
         URL: flipkart.com
-           
+
 
