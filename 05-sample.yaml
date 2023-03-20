@@ -7,9 +7,9 @@
      ansible.builtin.debug:
        msg: website url is {{URL}}
 
-# - name: play2
-#   hosts: all
-#   tasks:
-#    - name: printing value of play 2
-#      ansible.builtin.debug:
-#         msg: hello from play2
+- name: play2
+  hosts: all
+  tasks:
+   - name: printing value of play 2
+     ansible.builtin.debug:
+        msg: hello from play2
