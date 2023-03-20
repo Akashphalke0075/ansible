@@ -12,6 +12,6 @@
   tasks:
    - name: printing value of play 2
      ansible.builtin.debug:
-        msg: value of url is {{ URL }}
+        msg: value of url is {{URL}}
     #  vars: 
     #   URL: flipkart.com
