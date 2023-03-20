@@ -2,6 +2,7 @@
   hosts: dev
   vars: 
     URL: cerulean.com
+    CLI: cli.com
   vars_files:
     - demo-url.yaml
   tasks:
