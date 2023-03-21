@@ -12,9 +12,9 @@
     - name: running shell command
       ansible.builtin.shell: id
       register: OUT
-      become_user: centos
+      become_user: root
 
     - name: read the output
       ansible.builtin.debug:
           msg: "{{OUT.stdout}}"
-      become_user: centos
+      become_user: root
