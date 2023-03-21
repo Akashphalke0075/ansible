@@ -1,0 +1,9 @@
+- name: checking when condition
+  hosts: all
+  vars:
+    ACTION: true
+  tasks:
+    - name: printing centos 
+      ansible.builtin.debug:
+         msg: hello from centos
+      when: ACTION     
