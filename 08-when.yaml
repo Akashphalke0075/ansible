@@ -12,6 +12,6 @@
       ansible.builtin.shell: echo "I've got '{{ foo }}' and am not afraid to use it!"
       when: foo is defined
 
-    # - name: Fail if "bar" is undefined
-    #   ansible.builtin.fail: msg="Bailing out. This play requires 'bar'"
-    #   when: bar is undefined
+    - name: Fail if "bar" is undefined
+      ansible.builtin.fail: msg="Bailing out. This play requires 'bar'"
+      when: bar is undefined
