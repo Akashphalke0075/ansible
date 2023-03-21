@@ -8,3 +8,12 @@
     - name: read the output
       ansible.builtin.debug:
           msg: "{{OUT.stdout}}"
+
+
+    - name: java process validation  
+      ansible.builtin.shell: grep java | grep -v grep
+      register: output
+
+    - name: tomcat is starting
+      ansible.builtin.debug:
+          msg: start tomcat     
