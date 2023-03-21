@@ -2,22 +2,22 @@
   hosts: all
   tasks:
     - name: for webserver
-      ansible.buitin.debug:
+      ansible.builtin.debug:
         msg: hai from webserver
       tags: web
 
     - name: for webserver
-      ansible.buitin.debug:
+      ansible.builtin.debug:
         msg: hai from webserver  
       tags: web   
 
     - name: for appserver
-      ansible.buitin.debug:
+      ansible.builtin.debug:
         msg: hai from appserver   
       tags: app
 
     - name: for appserver
-      ansible.buitin.debug:
+      ansible.builtin.debug:
         msg: hai from appserver    
       tags: app
 
