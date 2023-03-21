@@ -1,0 +1,12 @@
+- name: condition check
+  hosts: all
+  tasks:
+    - name: validating conditions for centos
+      ansible.builtin.debug:
+        msg: hai from centos
+      when: ansible_distribution == "centos"
+
+    - name: validating conditions for ubuntu
+      ansible.builtin.debug:
+        msg: hai from ubuntu
+      when: ansible_distribution == "ubuntu"
