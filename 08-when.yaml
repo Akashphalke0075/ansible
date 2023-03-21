@@ -12,6 +12,7 @@
 
     - name: Run the command if "foo" is defined
       ansible.builtin.shell: echo "I've got '{{ foo }}' and am not afraid to use it!"
+      register: out
       when: foo is defined
 
     - name: Fail if "bar" is undefined
