@@ -11,7 +11,7 @@
 
 
     - name: java process validation  
-      ansible.builtin.shell: grep java | grep -v grep
+      ansible.builtin.shell: ps -ef | grep java | grep -v grep
       register: output
 
     - name: tomcat is starting
