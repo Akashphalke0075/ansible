@@ -1,7 +1,7 @@
 - name: checking when condition
   hosts: all
   vars:
-    ACTION: true
+    # ACTION: true
   tasks:
     - name: printing centos 
       ansible.builtin.debug:
