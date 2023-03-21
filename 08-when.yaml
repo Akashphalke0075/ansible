@@ -3,7 +3,7 @@
   vars:
     ACTION: true
   tasks:
-    - name: printing centos 
+    - name: printing ubuntu 
       ansible.builtin.debug:
          msg: hello from ubuntu
       when: ACTION     
