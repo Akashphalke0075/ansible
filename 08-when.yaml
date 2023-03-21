@@ -5,5 +5,5 @@
   tasks:
     - name: printing centos 
       ansible.builtin.debug:
-         msg: hello from centos
+         msg: hello from ubuntu
       when: ACTION     
