@@ -1,6 +1,5 @@
 - name: demo using sudo or root user
   hosts: all
-  become: yes
   tasks:
     - name: running shell command
       ansible.builtin.shell: id
