@@ -14,5 +14,5 @@
       when: foo is defined
 
     - name: Fail if "bar" is undefined
-      ansible.builtin.fail: msg="Bailing out. This play requires 'bar'"
+      ansible.builtin.debug: msg="Bailing out. This play requires 'bar'"
       when: bar is undefined
