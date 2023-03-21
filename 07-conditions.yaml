@@ -4,7 +4,7 @@
     - name: validating conditions for centos
       ansible.builtin.debug:
         msg: hai from centos
-      when: ansible_distribution == "centos"
+      when: ansible_distribution == "centOS"
 
     - name: validating conditions for ubuntu
       ansible.builtin.debug:
