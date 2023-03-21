@@ -1,0 +1,34 @@
+- name: demo on tag
+  hosts: all
+  tasks:
+    - name: for webserver
+      ansible.buitin.debug:
+        msg: hai from webserver
+      tags: web
+
+    - name: for webserver
+      ansible.buitin.debug:
+        msg: hai from webserver  
+      tags: web   
+
+    - name: for appserver
+      ansible.buitin.debug:
+        msg: hai from appserver   
+      tags: app
+
+    - name: for appserver
+      ansible.buitin.debug:
+        msg: hai from appserver    
+      tags: app
+
+    # - name: for webserver
+    #   ansible.buitin.debug:
+    #     msg: hai from webserver     
+
+    # - name: for webserver
+    #   ansible.buitin.debug:
+    #     msg: hai from webserver
+
+    # - name: for webserver
+    #   ansible.buitin.debug:
+    #     msg: hai from webserver                
