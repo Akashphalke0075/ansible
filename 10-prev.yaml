@@ -17,4 +17,3 @@
     - name: read the output
       ansible.builtin.debug:
           msg: "{{OUT.stdout}}"
-      become_user: root
