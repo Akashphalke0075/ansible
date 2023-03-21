@@ -22,13 +22,13 @@
       tags: app
 
     # - name: for webserver
-    #   ansible.buitin.debug:
+    #   ansible.builtin.debug:
     #     msg: hai from webserver     
 
     # - name: for webserver
-    #   ansible.buitin.debug:
+    #   ansible.builtin.debug:
     #     msg: hai from webserver
 
     # - name: for webserver
-    #   ansible.buitin.debug:
+    #   ansible.builtin.debug:
     #     msg: hai from webserver                
