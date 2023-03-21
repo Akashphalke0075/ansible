@@ -12,7 +12,6 @@
 
     - name: java process validation  
       ansible.builtin.shell: ps -ef | grep java | grep -v grep
-      register: output
       ignore_errors: yes
 
     - name: tomcat is starting
