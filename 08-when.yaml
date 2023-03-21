@@ -6,7 +6,7 @@
     - name: printing centos 
       ansible.builtin.debug:
          msg: hello from centos
-      when: ACTION     
+      when: ACTION is undefined    
 
     - name: Run the command if "foo" is defined
       ansible.builtin.shell: echo "I've got '{{ foo }}' and am not afraid to use it!"
