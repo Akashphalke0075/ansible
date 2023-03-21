@@ -1,0 +1,10 @@
+- name: demo using sudo or root user
+  hosts: all
+  tasks:
+    - name: running shell command
+      ansible.builtin.shell: id
+      register: OUT
+
+    - name: read the output
+      ansible.builtin.debug:
+          msg: "{{OUT.stdout}}"
