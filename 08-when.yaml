@@ -3,7 +3,6 @@
   vars:
     ACTION: true
     bar: akash
-    foo: vinod
   tasks:
     - name: printing centos 
       ansible.builtin.debug:
