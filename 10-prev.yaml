@@ -8,7 +8,7 @@
 
     - name: read the output
       ansible.builtin.debug:
-          msg: "{{OUT}}"
+          msg: "{{OUT.stdout}}"
 
     - name: running shell command
       ansible.builtin.shell: id
