@@ -13,5 +13,7 @@
       vars:
         URL: play.locals.com     
 
-
+    - name: var demo task2
+      ansible.builtin.debug:
+         msg: "{{ CLI_URL }}"
 
