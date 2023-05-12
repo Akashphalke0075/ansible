@@ -2,6 +2,7 @@
   hosts: all
   vars:
     URL: play.google.com
+    CLI_URL: cli.global.com
   tasks:
     - name: var demo task1
       ansible.builtin.debug:
