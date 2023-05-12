@@ -1,0 +1,10 @@
+- name: var demo
+  hosts: all
+  vars:
+    URL: play.google.com
+  tasks:
+    - name: var demo task1
+      ansible.builtin.debug:
+         msg: website url is {{ URL }} 
+
+
