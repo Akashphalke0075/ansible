@@ -7,4 +7,9 @@
       ansible.builtin.debug:
          msg: website url is {{ URL }} 
 
+    - name: var demo task2
+      ansible.builtin.debug:
+         msg: "{{ URL }}"
+
+
 
