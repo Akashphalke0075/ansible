@@ -10,6 +10,8 @@
     - name: var demo task2
       ansible.builtin.debug:
          msg: "{{ URL }}"
+    - vars:
+        URL: play.locals.com     
 
 
 
