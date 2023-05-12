@@ -10,7 +10,7 @@
           msg: hai from task2 play1    
 
 - name: play2
-  hosts: prod
+  hosts: dev
   tasks:
    - name: print heloo from task2 and play2
      ansible.builtin.debug:
