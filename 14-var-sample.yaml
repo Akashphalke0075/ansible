@@ -3,6 +3,8 @@
   vars:
     URL: play.google.com
     CLI_URL: cli.global.com
+  vars_files:
+    - demo-url.yaml  
   tasks:
     - name: var demo task1
       ansible.builtin.debug:
