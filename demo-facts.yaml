@@ -1,0 +1,6 @@
+- name: facts
+  hosts: all
+  tasks:
+    - name: demo on facts
+      ansible.builtin.debug:
+        msg: ansible distribution is {{ ansible_distribution }}
