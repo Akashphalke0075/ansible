@@ -1,0 +1,10 @@
+- name: register output
+  hosts: all
+  tasks:
+    - name: running shell command
+      ansible.builtin.shell: uptime
+      register: OUT
+
+    - name: printing the output
+      ansible.builtin.debug: 
+        msg: "{{ OUT }}"     
