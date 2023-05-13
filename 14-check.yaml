@@ -3,6 +3,8 @@
   tasks:
     - name: checkinh tomcat
       ansible.builtin.shell: ps -ef | grep java | grep -v grep
+      register: OUT
+
 
     - name: starrting tomcat
       ansible.builtin.debug:
