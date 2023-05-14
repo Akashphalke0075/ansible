@@ -4,4 +4,4 @@
     - name: checking when condition
       ansible.builtin.debug:
         msg: hai from centos 
-      when: ansible_distribution == "Centos"
+      when: ansible_distribution == "CentOS"
