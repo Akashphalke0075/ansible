@@ -1,0 +1,14 @@
+- name: when condition
+  hosts: all
+  vars: 
+    ACTION: true
+  tasks:
+    - name: checking when condition
+      ansible.builtin.debug:
+        msg: heloo from "CentOS"
+      when: ACTION is undefined  
+
+    - name: checking when condition
+      ansible.builtin.debug:
+        msg: heloo from "CentOS"
+      when: ACTION is defined  
