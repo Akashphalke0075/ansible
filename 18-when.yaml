@@ -3,5 +3,5 @@
   tasks:
     - name: checking when condition
       ansible.builtin.debug
-        msg: hai from "CentOS"
+        msg: hai from centos 
       when: "ansible_distribution" == "CentOS"
