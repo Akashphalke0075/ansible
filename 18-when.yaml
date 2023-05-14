@@ -1,0 +1,7 @@
+- name: checking when condition
+  hosts: all
+  tasks:
+    - name: checking when condition
+      ansible.builtin.debug
+        msg: hai from "CentOS"
+      when: ansi  
