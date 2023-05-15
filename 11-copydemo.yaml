@@ -6,3 +6,7 @@
         src: inv
         dest: /home/centos/akash
 
+    - name: copy file to destination
+      ansible.builtin.copy:
+        src: vikas
+        dest: /home/centos/milind
