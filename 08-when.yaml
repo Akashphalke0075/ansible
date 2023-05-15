@@ -2,6 +2,7 @@
   hosts: all
   vars:
     # ACTION: true
+      foo: true
   tasks:
     - name: printing centos 
       ansible.builtin.debug:
